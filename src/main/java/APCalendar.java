@@ -55,7 +55,11 @@ for(int i=year1;i<=year2;i++)
   public static int dayOfWeek(int month, int day, int year)
   {
     /* to be implemented in part (b) */
-  
-    return (firstDayOfYear(year)+dayOfYear(month,day,year))%7-1;
+  int help=(firstDayOfYear(year)+dayOfYear(month,day,year)-1)%7;
+    // /* to be implemented in part (b) */
+    // if(help==0)
+    // help=7;
+    // return help-1;
+    return (firstDayOfYear(year)+dayOfYear(month,day,year)-1)%7;
   }
 }
