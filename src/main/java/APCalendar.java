@@ -56,6 +56,6 @@ for(int i=year1;i<=year2;i++)
   {
 
     /* to be implemented in part (b) */
-    return (firstDayOfYear(year)+dayOfYear(month,day,year))%7;
+    return (firstDayOfYear(year)+dayOfYear(month,day,year))%7+1;
   }
 }
