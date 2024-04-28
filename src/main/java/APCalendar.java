@@ -58,6 +58,6 @@ int help=(firstDayOfYear(year)+dayOfYear(month,day,year))%7;
     /* to be implemented in part (b) */
     if(help==0)
     return 7;
-    return (firstDayOfYear(year)+dayOfYear(month,day,year))%7;
+    return help;
   }
 }
